@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Computer Graphics - Task 1.2</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+		
+			var shaderProgram, gl; //Global variables
+		
+			function onLoad() { 
+				var canvas = document.getElementById('myCanvas');
+				gl = canvas.getContext("experimental-webgl"); //Now we get the WebGL context
+				
+				//This will initialize the shaders (code that is sent to the GPU)
+				shaderProgram = initShaders(gl);
+				
+				gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight); //Specify the dimensions of our viewport to be full size
+				gl.clear(gl.COLOR_BUFFER_BIT); //Clear the screen
+				
+				drawTriangle([0.0, 0.0]); //This should draw you a triangle with the midpoint at [0, 0], because we are in normalized device coordinates.
+			}
+			
+			function drawTriangle(position) {
+				//We create a buffer that holds the vertex positions
+				var triangleVertexPositionBuffer = gl.createBuffer();
+				
+				//We have 3 vertices that each has 3 floats.
+				triangleVertexPositionBuffer.numItems = 3;
+				triangleVertexPositionBuffer.itemSize = 3;
+				
+				//It is an array buffer, there are others as well
+				gl.bindBuffer(gl.ARRAY_BUFFER, triangleVertexPositionBuffer);
+				
+				const ratio = gl.drawingBufferWidth / gl.drawingBufferHeight;
+				const r = 0.69;
+				
+				const x = position[0];
+				const y = position[1];
+				
+				const x1 = x;
+				const y1 = y + r;
+				
+				let angle = 120 * (3.14159 / 180);
+				const x2 = (x1 - x) * Math.cos(angle) - (y1 - y) * Math.sin(angle) + x;
+				const y2 = (x1 - x) * Math.sin(angle) + (y1 - y) * Math.cos(angle) + y;
+				
+				angle = 240 * (3.14159 / 180);
+				const x3 = (x1 - x) * Math.cos(angle) - (y1 - y) * Math.sin(angle) + x;
+				const y3 = (x1 - x) * Math.sin(angle) + (y1 - y) * Math.cos(angle) + y;
+				
+				var vertices = [
+					x1 / ratio, y1,  0.0,
+					x2 / ratio, y2,  0.0,
+					x3 / ratio, y3,  0.0
+				];
+
+				/* --Task--
+					The current code will draw you a triangle, but it is not equilateral.
+					Task is to generate another vertices array that has the vertices of an equilateral triangle.
+					Note that the coordinates are in normalized device space. This means that:
+						[0, 0, 0] - center
+						[-1, -1, 0] - bottom-left
+						[1, 1, 0] - top-right
+					Notice that the y-axis is inverted.
+					
+					Also, our viewport is 800x500. This means that 1 unit in y direction is not the same as 1 unit in x direction.
+				*/
+				
+				
+				//Send the data to the GPU as a float 32 array.
+				//Read more at: https://www.opengl.org/sdk/docs/man/html/glBufferData.xhtml
+				gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
+				
+				
+				//Assign our current buffer as an attribute called "aVertexPosition" to the shaders.
+				//This will make sure that 3 floats (position coordinates) are sent to each vertex.
+				gl.vertexAttribPointer(shaderProgram.aVertexPosition, triangleVertexPositionBuffer.itemSize, gl.FLOAT, false, 0, 0);
+				
+				
+				//Draw call that will take the vertices from the current buffer. 
+				//We render the vertices from index 0 and there are 3 (numItems) of them.
+				gl.drawArrays(gl.TRIANGLES, 0, triangleVertexPositionBuffer.numItems);
+			}
+		
+		</script>
+		<script type="text/javascript" src="utils.js"></script>
+		<script id="shader-fs" type="x-shader/x-fragment">
+			precision mediump float;
+
+			void main() {
+				gl_FragColor = vec4(1.0, 0.2, 0.2, 1.0); //Draw all fragments with a red color
+			}
+		</script>
+
+		<script id="shader-vs" type="x-shader/x-vertex">
+			attribute vec3 aVertexPosition;
+
+			void main() {
+				gl_Position = vec4(aVertexPosition, 1.0); //The position is "as is". Notice homogeneous coordinates. This is also in normalized device coordinates.
+			}
+		</script>
+	</head>
+	<body onload="onLoad()">
+		<canvas width="800" height="500" id="myCanvas"></canvas>
+	</body>
+</html>

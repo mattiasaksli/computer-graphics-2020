@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Computer Graphics - Task 1.1</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+		
+			function onLoad() { //This will be called once the page is loaded
+				drawTriangle([150.0, 150.0]); //This should draw you a triangle with the midpoint at [150, 150].
+			}
+			
+			function drawTriangle(position) {
+				var canvas = document.getElementById('myCanvas'); //This is the <canvas> HTML element
+				var context = canvas.getContext('2d');			  //We get the 2D context for drawing
+				const r = 100;
+				
+				const x = position[0];
+				const y = position[1];
+				
+				const x1 = x;
+				const y1 = y - r;
+				
+				let angle = 120 * (3.14159 / 180);
+				const x2 = (x1 - x) * Math.cos(angle) - (y1 - y) * Math.sin(angle) + x;
+				const y2 = (x1 - x) * Math.sin(angle) + (y1 - y) * Math.cos(angle) + y;
+				
+				angle = 240 * (3.14159 / 180);
+				const x3 = (x1 - x) * Math.cos(angle) - (y1 - y) * Math.sin(angle) + x;
+				const y3 = (x1 - x) * Math.sin(angle) + (y1 - y) * Math.cos(angle) + y;
+				
+				context.beginPath();
+				context.moveTo(x1, y1);
+				context.lineTo(x2, y2);
+				context.lineTo(x3, y3);
+				context.lineTo(x1, y1);
+				context.fillStyle = "aquamarine"
+				context.fill();
+				context.closePath();
+				/*
+					Task is to finish this function. You need:
+						1) Choose a fixed value to determine the size of the triangle. For example the edge length in pixels.
+						2) Find the coordinates of the vertices
+						3) Draw on the "context". Look up methods like beginPath(), moveTo(), lineTo(), closePath(), fill()
+						4) Use console.log() to debug
+				*/
+			}
+		
+		</script>
+	</head>
+	<body onload="onLoad()">
+		<canvas width="800" height="500" id="myCanvas" style="border: 1px solid black;"></canvas>
+	</body>
+</html>

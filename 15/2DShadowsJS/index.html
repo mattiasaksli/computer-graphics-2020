@@ -1,0 +1,265 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Computer Graphics - Basic II - Task 7.1</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="three.r120.js"></script>
+		<script type="text/javascript" src="objects.js"></script>
+		<script type="text/javascript">
+		
+			var renderer, scene, camera, clock; //Regular stuff
+			var shadowLines, shadowOverlay; 	//We use shadow lines for debugging, shadow overlay indicates a visible area
+			var lightPosition;					//Or viewer position, will equate to mouse position
+			var testableObjects = new THREE.Group(); //These objects will cast shadows
+			var triangleObjects = [];					//Everybody likes triangles
+			var isDebug = false;					//Draw debug lines.
+			
+			var width = height = size = 400; //Dimensions of our viewport, camera and the floor quad
+			
+			var up = new THREE.Vector3(0, 0, 1);
+		
+			function onLoad() { 
+				var canvasContainer = document.getElementById('canvasContainer');			  
+				renderer = new THREE.WebGLRenderer(); 
+				renderer.setSize(width, height);
+				canvasContainer.appendChild(renderer.domElement);
+				
+				scene = new THREE.Scene();
+				
+				//Camera setup
+				camera = new THREE.OrthographicCamera(-size / 2, size / 2, size / 2, -size / 2, 1, 1000);
+				camera.position.z = 15; 
+				camera.position.y = 0;
+				camera.up = new THREE.Vector3(0,1,0);
+				camera.lookAt(new THREE.Vector3(0,0,0));
+				
+				clock = new THREE.Clock();
+				
+				lightPosition = new THREE.Vector3(0, 0, 2);
+				
+				initScene();			//Init the scene geometry
+				initIntersections();	//Init the intersection testing structures
+				draw();
+				
+				canvasContainer.addEventListener( 'mousemove', onMouseMove, false );
+			}
+			
+			/**
+			 * Listener to set the lightPosition to mouse coordinates, when the mouse moves on the canvas.
+			 */
+			function onMouseMove( event ) {
+				var rect = document.getElementById('canvasContainer').getBoundingClientRect();
+				lightPosition.x = ( event.clientX ) - width / 2 - rect.left;
+				lightPosition.y = - ( event.clientY ) + height / 2 + rect.top;
+			}
+			
+			function toRad(degree) {
+				return Math.PI * 2 * degree / 360;
+			}
+			
+			/**
+			 * This constructs all the objects in our scene:
+			 * Letters C and G, the rotating triangles, the box around the scene, the floor.
+			 */
+			function initScene() {
+				testableObjects.add(Objects.createBox());
+				testableObjects.add(Objects.createC());
+				testableObjects.add(Objects.createG());
+				
+				var triangles = Objects.createTriangles();
+				for (var x in triangles) {
+					testableObjects.add(triangles[x]);
+					triangleObjects.push(triangles[x]); //We keep triangles also in a separate array
+				}
+				
+				scene.add(testableObjects); //Add the testable objects Group
+				
+				/** --Task-- 
+				 * Enable this, when you are ready to blend it.
+				 * Do not forget to configure the blending in objects.js
+				 */
+				scene.add(Objects.createFloor());
+			}
+			
+			
+			//Ray direction has to be normalized, because there will be a scalar projection of that when checking bounding sphere intersection
+			var rays = [];
+			
+			function initIntersections() {
+				testableObjects.traverse(function(object) {
+					if (object.type == 'Line') {
+						/**
+						 * --Task--
+						 * Go through all of the vertices of that object.
+						 * Create 3 (initially you can test with 1) rays, two of which will be slightly rotated.
+						 * A ray will be a JSON object:
+						 *	{
+						 *		dir: ... 	//Normalized direction vector
+						 *		shift: ... 	//Save the slight rotation we did for this ray
+						 * 		vertex: ... //The vertex this ray is pointing to
+						 * 		originObject: ... //Object this ray is pointing to
+						 *  }
+						 * Push it to the "rays" array.
+						 */
+						for (var vi in object.geometry.vertices) {
+							rays.push(
+								{
+									dir: new THREE.Vector3(),
+									shift: 0,
+									vertex: object.geometry.vertices[vi],
+									originObject: object
+								},
+								{
+									dir: new THREE.Vector3(),
+									shift: -0.001,
+									vertex: object.geometry.vertices[vi],
+									originObject: object
+								},
+								{
+									dir: new THREE.Vector3(),
+									shift: 0.001,
+									vertex: object.geometry.vertices[vi],
+									originObject: object
+								}
+							);
+						}
+					}
+				});
+				
+				var shadowLineGeometry = new THREE.Geometry();
+				var shadowOverlayGeometry = new THREE.Geometry();
+				shadowOverlayGeometry.vertices.push(lightPosition); //First vertex is the lightPosition
+				for (var i = 0; i < rays.length; i++) {
+					/**
+					 * --Task--
+					 * To the shadowLineGeometry push pairs of vertices, where:
+					 *	Start is the lightPosition
+					 * 	End is an empty vector (we will update it later)
+					 * To the shadowOverlayGeometry:
+					 * 	Push an empty vertex
+					 *	Push a face with the correct indices
+					 */
+					shadowLineGeometry.vertices.push(
+						lightPosition,
+						new THREE.Vector3()
+					);
+
+					shadowOverlayGeometry.vertices.push(
+						new THREE.Vector3()
+					);
+					shadowOverlayGeometry.faces.push(
+						new THREE.Face3(0, i + 1, (i + 1) % rays.length + 1)
+					);
+				}
+				//Construct shadowLines and shadowOverlay meshes.
+				shadowLines = new THREE.Line(shadowLineGeometry, new THREE.LineBasicMaterial( { color: 0x00ff00, visible: isDebug } ));
+				shadowOverlay = new THREE.Mesh(shadowOverlayGeometry, new THREE.MeshBasicMaterial({
+					color: 0xffffff,
+				}));
+				
+				shadowLines.position.set(0, 0, 2);
+				shadowOverlay.position.set(0, 0, -2); //Intersections are found at z=2, so 2 - 2 = 0.
+				
+				scene.add(shadowLines);
+				scene.add(shadowOverlay);
+				//console.log('You may get an error about faceless geometries if the initIntersections method is unfinished');
+			}
+			
+			function findIntersections() {
+				var rayDirections = [];
+				var ray;
+				
+				for (var x in rays) {
+					/**
+					 * --Task--
+					 * Update the directions (rays[x].dir) for rays.
+					 * Think about what the updated direction vector is:
+					 * 	- From where to where
+					 * 	- In which space are those coordinates (object's model matrix is "matrix" or "matrixWorld")
+					 *  - Do not forget to normalize it (Three.js wants it to be normalized for the trace)
+					 */
+					ray = rays[x];
+					ray.dir.copy(ray.vertex)
+						.applyMatrix4(ray.originObject.matrixWorld)
+						.sub(lightPosition)
+						.applyAxisAngle(up, ray.shift)	// Rotates the ray by the shifted radians amount.
+						.normalize();
+				}
+				
+				rays.sort(function(u, v) {
+					/**
+					 * --Task--
+					 * Sort the rays based on the angle of their direction vector.
+					 *  - How to get the angle knowing x and y?
+					 */
+					 
+					return Math.atan2(u.dir.y, u.dir.x) - Math.atan2(v.dir.y, v.dir.x);;
+				});
+				
+				var rayCaster = new THREE.Raycaster();
+				rayCaster.params.Line.threshold = 0.0001;
+				var shadowVertices = [];
+				var intersections = [];
+				var newIntersections = [];
+				var newIntersection;
+				
+				/**
+				 * --Task--
+				 * Iterate over the rays and use the rayCaster to find the first intersection.
+				 * Push the first intersection to the intersections array.
+				 */
+				for (var ray of rays) {
+					newIntersections.length = 0;
+					rayCaster.set(lightPosition, ray.dir);
+					rayCaster.intersectObjects(testableObjects.children, true, newIntersections);
+					newIntersection = newIntersections[0];
+					intersections.push(newIntersection);
+				}
+				
+				
+				/**
+				 * --Task--
+				 * Iterate over the intersections and update the vertices for shadowLines and shadowOverlay.
+				 * Alternatively you can try to do this in the previous loop.
+				 * 	- What happens if there is no intersection? Is it possible if we have a box surrounding the scene?
+				 */
+				for (var i = 0; i < intersections.length; i++) {
+					shadowLines.geometry.vertices[2 * i + 1].copy(intersections[i].point);	// The odd indexes are the hit points.
+					shadowOverlay.geometry.vertices[i + 1].copy(intersections[i].point);
+				}
+				
+				
+				shadowLines.geometry.verticesNeedUpdate = true;
+				shadowOverlay.geometry.verticesNeedUpdate = true;
+			}
+			
+			
+			function draw() {
+				requestAnimationFrame(draw);
+				
+				dt = clock.getDelta();
+				
+				for (var x in triangleObjects) { //Here we rotate the triangles
+					triangleObjects[x].rotation.z += triangleObjects[x].rotationSpeed * dt;
+					triangleObjects[x].updateMatrixWorld();
+				}
+				
+				findIntersections(); //Find the intersections, update shadowLines and shadowOverlay
+
+				renderer.render(scene, camera);
+			}
+		
+		</script>
+		<style type="text/css">
+			#canvasContainer {
+				border: 1px solid black;
+				margin: 2px;
+				width: 400px;
+				height: 400px;
+			}
+		</style>
+	</head>
+	<body onload="onLoad()">
+		<div id="canvasContainer"></div>
+	</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Computer Graphics - Basic II - Task 4.1 - Procedural Generation</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="three.r120.js"></script>
+		<script type="text/javascript">
+		
+			var width = 800; 
+			var height = 500;
+
+			var renderer, scene, camera;
+			var planet;
+			var lightPosition;
+			
+			var planetVertexShader, planetFragmentShader;
+			
+			/**
+			 * Function to tell us the milliseconds
+			 */
+			function millis() {
+				return (new Date()).getTime();
+			}
+			
+			/**
+			 * Converts degrees to radians
+			 */
+			function toRad(degree) {
+				return Math.PI * 2 * degree / 360;
+			}
+		
+			function onLoad() { 
+				var canvasContainer = document.getElementById('myCanvasContainer'); 
+				
+				planetVertexShader = document.getElementById('vertexShader').textContent;
+				planetFragmentShader = document.getElementById('fragmentShader').textContent;
+				
+				renderer = new THREE.WebGLRenderer(); 
+				renderer.setSize(width, height);
+				canvasContainer.appendChild(renderer.domElement);
+				
+				scene = new THREE.Scene();
+				
+				//We will use a perspective camera, with FOV 80 degrees, correct aspect ratio, near plane at distance 1, far plane at distance 1000
+				camera = new THREE.PerspectiveCamera(80, width / height, 1, 30);
+				camera.position.z = 15;
+				camera.position.y = 0;
+				camera.up = new THREE.Vector3(0,1,0);
+				camera.lookAt(new THREE.Vector3(0,0,0));
+				scene.add(camera);
+				
+				lightPosition = new THREE.Vector3(50, 40, 20);
+				planet = addPlanet();
+				
+				draw();
+			}
+			
+			function draw() {
+				requestAnimationFrame(draw);
+				
+				planet.rotation.set(0, toRad((millis() / 50) % 360), 0);
+				
+				renderer.render(scene, camera);
+			}
+			
+			/**
+			 * This function creates the planet.
+			 */
+			function addPlanet() {
+				var planet = new THREE.Object3D();
+				var sphere = createSphere();
+
+				sphere.scale.set(7, 7, 7);
+				planet.add(sphere);
+				scene.add(planet);
+				
+				return planet;
+			}
+			
+			/**
+			 * Creates a sphere.
+			 * --Task-- Finish this function.
+			 */
+			function createSphere() {
+				//-- Task 1 -- Make the sphere look smoother by changing the geometry values
+				var geometry = new THREE.SphereGeometry(1, 38, 36);
+
+				var colorWater = new THREE.Color(0x00aeef);
+				var colorAtmosphere = new THREE.Color(0x66d5ed);
+				var color1 = new THREE.Color(0x197b30);
+				var color2 = new THREE.Color(0x005826);
+				var color3 = new THREE.Color(0x4e3f32);
+				
+				var material = new THREE.ShaderMaterial({
+					uniforms: {
+						//-- Task 2 -- Pass light position to the shader
+						lightPosition: {
+							value: lightPosition
+						},
+						
+						//-- Task 3 -- Pass planet colors to the shader 
+						//	(You could use the color values defined above but you can also change them to get more interesting planet)
+						colorWater: {
+							value: colorWater
+						},
+						colorAtmosphere: {
+							value: colorAtmosphere
+						},
+						colors: {
+							value: [color1, color2, color3]
+						},
+						gamma: {
+							value: 2.2
+						}
+					},
+					vertexShader: planetVertexShader,
+					fragmentShader: planetFragmentShader
+				});
+				var sphere = new THREE.Mesh(geometry, material); //We create our cube with that material
+				
+				return sphere;
+			}
+			
+		</script>
+
+		<script id="vertexShader" type="x-shader/x-vertex">
+			varying vec3 interpolatedLocalPosition; //We interpolate the local position of fragment
+			varying vec3 interpolatedPosition;
+			varying vec3 interpolatedNormal;
+			
+			void main() {
+				interpolatedLocalPosition = position;
+				
+				mat4 modelViewMatrix = viewMatrix * modelMatrix;
+				mat3 normalMatrix = transpose(inverse(mat3(modelViewMatrix)));
+				
+				interpolatedPosition = (modelViewMatrix * vec4(position, 1.0)).xyz;
+				interpolatedNormal = normalize(normalMatrix * normal);
+				
+				gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+			}
+		</script>
+		
+		<script id="fragmentShader" type="x-shader/x-fragment">
+			
+			uniform vec3 lightPosition;
+			uniform vec3 colorWater;
+			uniform vec3 colorAtmosphere;
+			uniform vec3 colors[3];
+			uniform float gamma;
+		
+			varying vec3 interpolatedLocalPosition;
+			varying vec3 interpolatedPosition;
+			varying vec3 interpolatedNormal;
+			
+			//Source: https://www.shadertoy.com/view/Xsl3Dl
+			vec3 hash(vec3 p) {
+				p = vec3( dot(p, vec3(127.1,311.7, 74.7)),
+						  dot(p, vec3(269.5,163.3,226.1)),
+						  dot(p, vec3(113.5,271.9,124.6)));
+						  
+				return -1.0 + 2.0 * fract(sin(p) * 43758.5453123);
+			}
+			
+			//Source: https://www.shadertoy.com/view/Xsl3Dl
+			float noise(in vec3 p) {
+				vec3 i = floor( p );
+				vec3 f = fract( p );
+				
+				//vec3 u = f*f*(3.0-2.0*f);
+				vec3 u = f*f*(3.0-2.0*f);
+
+				return mix( mix( mix( dot( hash( i + vec3(0.0,0.0,0.0) ), f - vec3(0.0,0.0,0.0) ), 
+									  dot( hash( i + vec3(1.0,0.0,0.0) ), f - vec3(1.0,0.0,0.0) ), u.x),
+								 mix( dot( hash( i + vec3(0.0,1.0,0.0) ), f - vec3(0.0,1.0,0.0) ), 
+									  dot( hash( i + vec3(1.0,1.0,0.0) ), f - vec3(1.0,1.0,0.0) ), u.x), u.y),
+							mix( mix( dot( hash( i + vec3(0.0,0.0,1.0) ), f - vec3(0.0,0.0,1.0) ), 
+									  dot( hash( i + vec3(1.0,0.0,1.0) ), f - vec3(1.0,0.0,1.0) ), u.x),
+								 mix( dot( hash( i + vec3(0.0,1.0,1.0) ), f - vec3(0.0,1.0,1.0) ), 
+									  dot( hash( i + vec3(1.0,1.0,1.0) ), f - vec3(1.0,1.0,1.0) ), u.x), u.y), u.z );
+			}
+			
+			void main() {
+			
+				//-- Task 4 -- Calculate f by combining multiple noise layers using different density
+				//Right now it just adds one layer of noise
+				float f = 0.0;
+				f += 0.8 * noise(2.0 * interpolatedLocalPosition);
+				f += 0.7 * noise(5.0 * interpolatedLocalPosition);
+				f += 0.2 * noise(15.0 * interpolatedLocalPosition);
+				f += 0.2 * noise(20.0 * interpolatedLocalPosition);
+				f += 0.1 * noise(25.0 * interpolatedLocalPosition);
+
+				//-- Task 5 -- Determine the color of the fragment.
+				// One approach is to use the noise threshold.
+				// 		For example if the threshold is smaller than 0 (or some other number) then use blue color (water)
+				//		otherwise use green color (land).
+				vec3 color = colorWater;
+				if (f > 0.25) {
+					color = colors[0];
+				} else if (f > 0.0) {
+					color = colors[1];
+				} else if (f > -0.05) {
+					color = colors[2];
+				}
+				
+				//-- Task 6 -- Add the phong or blinn lighting model (keep in mind that there is no ambient light in the space).
+				vec3 vertexPosition = interpolatedPosition;
+				vec3 n = normalize(interpolatedNormal);
+				vec3 v = normalize(-vertexPosition);
+				vec3 l = normalize(lightPosition - vertexPosition);
+				vec3 h = normalize(l + v);
+				
+				vec3 gammaColor = pow(color, vec3(gamma));
+				float diffuseScalar = max(0.0, dot(n, l));
+				vec3 litColor = gammaColor * diffuseScalar; // Diffuse
+				
+				//-- Task 7 -- Add specular highlight to the water. Do not add it for land.
+				if (f <= -0.05) {
+					// Specular highlight
+					litColor += pow(max(0.0, dot(n, h)), 200.0);
+				}
+				
+				//-- Task 8 -- Add atmosphere glow effect (this effect is sometimes called rimlight)
+				//Hint: you can use the cosine of the angle between camera direction and surface normal.
+				//		The glow should be stronger when the angle is close to 90 degrees.
+				litColor += vec3(0.0, 0.5, 1.0) * pow((1.0 - dot(n, v)), 4.0) * diffuseScalar;
+				
+				litColor = pow(litColor, vec3(1.0 / gamma));
+				
+				gl_FragColor = vec4(litColor, 1.0);
+			}
+		</script>
+		
+	</head>
+	<body onload="onLoad()">
+		<div id="myCanvasContainer"></div>
+	</body>
+</html>

@@ -1,0 +1,2507 @@
+# depslib dependency file v1.0
+1443041213 source:c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	"shader_util.h"
+
+1380407632 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1388520873 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glfw\glfw3.h
+	<stddef.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<GLES3/gl3.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\precision.hpp
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\_swizzle.hpp
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\_swizzle_func.hpp
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec2.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec3.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec4_sse2.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec4_avx.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec4_avx2.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat2x2.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat2x3.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat2x4.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat3x2.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat3x3.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat3x4.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat4x2.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat4x3.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_mat4x4.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_vec1.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\type_half.inl
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1425000870 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\shader_util.h
+	<string>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\gtc\constants.inl
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1425011551 source:c:\work\codelight\server\cg2\storage\solutions\5\chopperopengl\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1425011551 source:c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1425000870 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\shader_util.h
+	<string>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1380407632 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\precision.hpp
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\_swizzle.hpp
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\_swizzle_func.hpp
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec2.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec3.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec4_sse2.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec4_avx.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec4_avx2.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat2x2.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat2x3.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat2x4.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat3x2.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat3x3.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat3x4.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat4x2.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat4x3.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_mat4x4.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_vec1.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\type_half.inl
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\gtc\constants.inl
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1424991040 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1443042714 source:c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	"shader_util.h"
+
+1388520873 c:\work\codelight\server\cg2\public\files\course\5\chopperopengl\include\glfw\glfw3.h
+	<stddef.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<GLES3/gl3.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1443649641 source:j:\work\server\cg2\public\files\course\5\projectedchoppercpp\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	"shader_util.h"
+
+1501501581 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1579482797 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<vulkan/vulkan.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\precision.hpp
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\_swizzle.hpp
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\_swizzle_func.hpp
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec2.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec3.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec4_sse2.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec4_avx.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec4_avx2.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat2x2.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat2x3.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat2x4.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat3x2.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat3x3.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat3x4.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat4x2.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat4x3.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_mat4x4.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_vec1.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\type_half.inl
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\shader_util.h
+	<string>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\gtc\constants.inl
+	<limits>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1443649641 j:\work\server\cg2\public\files\course\5\projectedchoppercpp\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1572459909 source:j:\work\server\cg2\public\files\course\5\projectedchoppercpp\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1600953428 source:\\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	"shader_util.h"
+
+1501505181 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1579482797 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<vulkan/vulkan.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\precision.hpp
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\_swizzle.hpp
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\_swizzle_func.hpp
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec2.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec3.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec4_sse2.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec4_avx.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec4_avx2.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat2x2.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat2x3.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat2x4.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat3x2.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat3x3.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat3x4.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat4x2.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat4x3.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_mat4x4.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_vec1.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\type_half.inl
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\shader_util.h
+	<string>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\gtc\constants.inl
+	<limits>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1443653241 \\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1572459909 source:\\leesikas.ut.ee\m_aksli\cg_hws\projectedchoppercpp\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1601240515 source:c:\users\matti\desktop\projectedchoppercpp\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	"shader_util.h"
+
+1601234774 c:\users\matti\desktop\projectedchoppercpp\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1601234773 c:\users\matti\desktop\projectedchoppercpp\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<vulkan/vulkan.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1601234774 c:\users\matti\desktop\projectedchoppercpp\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1601234783 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\precision.hpp
+
+1601234783 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1601234774 c:\users\matti\desktop\projectedchoppercpp\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1601234783 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1601234783 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\_swizzle.hpp
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\_swizzle_func.hpp
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec2.inl
+
+1601234775 c:\users\matti\desktop\projectedchoppercpp\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec3.inl
+
+1601234774 c:\users\matti\desktop\projectedchoppercpp\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1601234783 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec4_sse2.inl
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec4_avx.inl
+
+1601234783 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec4_avx2.inl
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat2x2.inl
+
+1601234775 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat2x3.inl
+
+1601234774 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat2x4.inl
+
+1601234774 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat3x2.inl
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat3x3.inl
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat3x4.inl
+
+1601234774 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat4x2.inl
+
+1601234775 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat4x3.inl
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_mat4x4.inl
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1601234783 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_vec1.inl
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1601234784 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1601234775 c:\users\matti\desktop\projectedchoppercpp\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1601234783 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1601234775 c:\users\matti\desktop\projectedchoppercpp\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\type_half.inl
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1601234781 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1601234774 c:\users\matti\desktop\projectedchoppercpp\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1601234782 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1601234785 c:\users\matti\desktop\projectedchoppercpp\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1601234789 c:\users\matti\desktop\projectedchoppercpp\shader_util.h
+	<string>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1601234787 c:\users\matti\desktop\projectedchoppercpp\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1601234787 c:\users\matti\desktop\projectedchoppercpp\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1601234788 c:\users\matti\desktop\projectedchoppercpp\include\glm\gtc\constants.inl
+	<limits>
+
+1601234787 c:\users\matti\desktop\projectedchoppercpp\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1601234786 c:\users\matti\desktop\projectedchoppercpp\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1601234789 source:c:\users\matti\desktop\projectedchoppercpp\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+

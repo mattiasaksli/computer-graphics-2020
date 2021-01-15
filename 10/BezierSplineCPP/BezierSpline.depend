@@ -1,0 +1,2650 @@
+# depslib dependency file v1.0
+1425757237 source:c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\bezier.cpp
+	<stdio.h>
+	"bezier.h"
+
+1425757102 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\bezier.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\precision.hpp
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\_swizzle.hpp
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\_swizzle_func.hpp
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec2.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec3.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec4_sse2.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec4_avx.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec4_avx2.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat2x2.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat2x3.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat2x4.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat3x2.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat3x3.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat3x4.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat4x2.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat4x3.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_mat4x4.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_vec1.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\type_half.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtc\constants.inl
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1425764781 source:c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<random>
+	<functional>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtx/rotate_vector.hpp>
+	"shader_util.h"
+	"bezier.h"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glfw\glfw3.h
+	<stddef.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<GLES3/gl3.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtx\transform.inl
+
+1425025314 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\include\glm\gtx\rotate_vector.inl
+
+1425764087 c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\shader_util.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1425764063 source:c:\work\hannas\server\cg\app\storage\solutions\11\bezieropengl\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1425764063 source:c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1425764087 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\shader_util.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\precision.hpp
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\_swizzle.hpp
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\_swizzle_func.hpp
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec2.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec3.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec4_sse2.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec4_avx.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec4_avx2.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat2x2.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat2x3.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat2x4.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat3x2.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat3x3.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat3x4.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat4x2.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat4x3.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_mat4x4.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_vec1.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\type_half.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtc\constants.inl
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1425765562 source:c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\bezier.cpp
+	<stdio.h>
+	"bezier.h"
+
+1425757102 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\bezier.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1425766901 source:c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<random>
+	<functional>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtx/rotate_vector.hpp>
+	"shader_util.h"
+	"bezier.h"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glfw\glfw3.h
+	<stddef.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<GLES3/gl3.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtx\transform.inl
+
+1425025314 c:\work\hannas\server\cg\public_html\files\course\11\bezieropengl\include\glm\gtx\rotate_vector.inl
+
+1440159983 source:c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\bezier.cpp
+	<stdio.h>
+	"bezier.h"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\bezier.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\precision.hpp
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\_swizzle.hpp
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\_swizzle_func.hpp
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec2.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec3.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4_sse2.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4_avx.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4_avx2.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x2.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x3.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x4.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x2.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x3.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x4.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x2.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x3.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x4.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec1.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_half.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\constants.inl
+	<limits>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1440159983 source:c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\shader_util.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1478735978 source:c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<random>
+	<functional>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtx/rotate_vector.hpp>
+	"shader_util.h"
+	"bezier.h"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glfw\glfw3.h
+	<stddef.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<GLES3/gl3.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtx\transform.inl
+
+1440159983 c:\work\codelight\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtx\rotate_vector.inl
+
+1440159983 source:j:\work\server\cg2\public\files\course\11\beziersplinecpp\bezier.cpp
+	<stdio.h>
+	"bezier.h"
+
+1440159983 j:\work\server\cg2\public\files\course\11\beziersplinecpp\bezier.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1501501581 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\precision.hpp
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\_swizzle.hpp
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\_swizzle_func.hpp
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec2.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec3.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4_sse2.inl
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4_avx.inl
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec4_avx2.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x2.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x3.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat2x4.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x2.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x3.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat3x4.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x2.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x3.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_mat4x4.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_vec1.inl
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\type_half.inl
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\constants.inl
+	<limits>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1426811174 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1512817461 source:j:\work\server\cg2\public\files\course\11\beziersplinecpp\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<random>
+	<functional>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtx/rotate_vector.hpp>
+	"shader_util.h"
+	"bezier.h"
+
+1579482797 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<vulkan/vulkan.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtx\transform.inl
+
+1426811175 j:\work\server\cg2\public\files\course\11\beziersplinecpp\include\glm\gtx\rotate_vector.inl
+
+1440159983 j:\work\server\cg2\public\files\course\11\beziersplinecpp\shader_util.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1572461051 source:j:\work\server\cg2\public\files\course\11\beziersplinecpp\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1440156383 source:c:\users\matti\desktop\beziersplinecpp\bezier.cpp
+	<stdio.h>
+	"bezier.h"
+
+1440156383 c:\users\matti\desktop\beziersplinecpp\bezier.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1501497981 c:\users\matti\desktop\beziersplinecpp\include\glew\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\_fixes.hpp
+	<cmath>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<smmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\precision.hpp
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\_swizzle.hpp
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\_swizzle_func.hpp
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec2.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec3.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec4.hpp
+	"setup.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec4.inl
+	"type_vec4_sse2.inl"
+	"type_vec4_avx.inl"
+	"type_vec4_avx2.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec4_sse2.inl
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec4_avx.inl
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec4_avx2.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat2x2.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat2x3.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat2x4.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat3x2.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat3x3.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat3x4.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat4x2.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat4x3.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_mat4x4.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_vec1.inl
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_vector_relational.inl
+	<limits>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\common.hpp
+	"detail/func_common.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\type_half.inl
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\gtc\constants.inl
+	<limits>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+
+1426807574 c:\users\matti\desktop\beziersplinecpp\include\glm\gtc\type_ptr.inl
+	<cstring>
+
+1572457451 source:c:\users\matti\desktop\beziersplinecpp\shader_util.cpp
+	"shader_util.h"
+	<stdexcept>
+	<cerrno>
+	<iostream>
+	<sstream>
+	<fstream>
+	<vector>
+	<cstring>
+	<stdlib.h>
+
+1440156383 c:\users\matti\desktop\beziersplinecpp\shader_util.h
+	<string>
+	<vector>
+	<GLEW/glew.h>
+	"glm/glm.hpp"
+	"glm/gtc/matrix_transform.hpp"
+	<glm/gtc/type_ptr.hpp>
+
+1604610332 source:c:\users\matti\desktop\beziersplinecpp\main.cpp
+	<stdlib.h>
+	<stack>
+	<unistd.h>
+	<stdio.h>
+	<random>
+	<functional>
+	<GLEW/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtx/rotate_vector.hpp>
+	"shader_util.h"
+	"bezier.h"
+
+1579479197 c:\users\matti\desktop\beziersplinecpp\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<vulkan/vulkan.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\gtx\rotate_vector.hpp
+	"../glm.hpp"
+	"../gtx/transform.hpp"
+	"rotate_vector.inl"
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\gtx\transform.hpp
+	"../glm.hpp"
+	"../gtc/matrix_transform.hpp"
+	"transform.inl"
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\gtx\transform.inl
+
+1426807575 c:\users\matti\desktop\beziersplinecpp\include\glm\gtx\rotate_vector.inl
+

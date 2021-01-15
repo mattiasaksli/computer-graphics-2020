@@ -1,0 +1,246 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Computer Graphics - Basic II - Homework 4.2</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="json3.min.js"></script>
+		<script type="text/javascript">
+		
+			var context;
+		
+			function onLoad() {
+				var canvas = document.getElementById('myCanvas');
+				context = canvas.getContext('2d');
+				//--Task-- When you are ready, use those lines to create many trees.
+				for (var i = 0; i < 5; i++) {
+					drawSystem(iterateSystem('A', 3), [100 + i * 150, 100]);
+					drawSystem(iterateSystem('A', 4), [100 + i * 150, 230]);
+					drawSystem(iterateSystem('A', 5), [100 + i * 150, 400]);
+					drawSystem(iterateSystem('A', 6), [100 + i * 150, 600]);
+				}
+			}
+			
+			function toRad(degree) {
+				return Math.PI * 2 * degree / 360;
+			}
+			
+			/**
+			 * --Task--
+			 * Create the rules described in the task description.
+			 * Alternatively, you can use your own stochastic rules, that give you your own trees.
+			 */
+			var rules = {
+				'A': [
+					{
+						probability: 1 / 3,
+						value: 'F[+(a)FA][-(a)FA]A'
+					},
+					{
+						probability: 1 / 3,
+						value: 'F[+(a)FA]A'
+					},
+					{
+						probability: 1 / 3,
+						value: 'F[-(a)FA]A'
+					},
+					
+				]
+			};
+			
+			/**
+			 * --Task--
+			 * Rewrite the system the number of iterations times.
+			 */
+			function iterateSystem(state, iterations) {
+				
+				//Currently, it is just one rewrite.
+				for (var i = 0; i < iterations; i++) {
+					state = rewriteSystem(state);
+				}
+				
+				//This outputs the final system:
+				console.log(state);
+				
+				return state;
+			}
+			
+			/**
+			 * --Task--
+			 * This function should rewrite the system, by applying the stochastic rules to the entire state.
+			 */
+			function rewriteSystem(state) {
+				var newState = '';
+				var probability = 0;
+				var runningProbability = 0;
+				var value, x;
+				
+				for (var i = 0; i < state.length; i++) {
+					if (rules[state[i]] != undefined) {
+						
+						//Currently we just assign the first matching rule's value (right side).
+						value = rules[state[i]][0].value;
+						
+						/**
+						 * You should pick one of the matching rule's right sides and assign it using the probability.
+						 * Math.random() gives a random number from [0, 1) range.
+						 * You might need to also account for floating point precision (eg, if the rule probabilities are 0.33, 0.33, 0.33 and you roll a 0.991).
+						 */
+						probability = Math.random();
+						runningProbability = 0;
+						for (var j = 0; j < rules[state[i]].length; j++) {
+							rule = rules[state[i]][j];
+							runningProbability += rule.probability;
+							if (probability < runningProbability) {
+								value = rule.value;
+								break;
+							}
+						}
+						
+						//We replace the parameters inside the value
+						value = replaceRuleParameters(value);
+						
+						//Replace the current symbol with the value.
+						newState += value;
+					} else {
+						//No matching rule, just copy the current symbol.
+						newState += state[i];
+					}
+				}
+				
+				return newState;
+			}
+			
+			/**
+			 * --Task--
+			 * Here we want to replace the parameters (currently only "a") with some concrete values.
+			 * In a more complex system there would be more parameters, that have dependant values.
+			 */
+			function replaceRuleParameters(ruleRight) {
+				var splitStr = ruleRight.split('(a)');  //We split the string with "(a)"
+				var resultStr = "";						//Here we store the result
+				
+				/**
+				 * Go through the splits, put a random angle between them.
+				 * You can use this for the random angle: (Math.random() * 10 + 20).toFixed(2)
+				 * Don't forget to account for the last split.
+				 */
+				 for(var i = 0; i < splitStr.length; i++) {
+					resultStr += splitStr[i];
+					if (i !== splitStr.length - 1) {
+						resultStr += `(${(Math.random() * 10 + 20).toFixed(2)})`;
+					}
+				 }
+				
+				//Return the "resultStr", when you are done.
+				return resultStr;
+			}
+			
+			/**
+			 * --Task--
+			 * This function will use turtle graphics to draw the system.
+			 * You need to account for the different symbols in the system to control the turtle.
+			 * The Algorithmic Beauty of Plants provides a table of the symbols: http://algorithmicbotany.org/papers/abop/abop.pdf (PDF p221)
+			 * They are also described in the task description.
+			 */
+			function drawSystem(state, position) {
+				context.beginPath();
+				context.strokeStyle="#A2322E";
+				
+				//Turtle consists of these values:
+				var turtle = {
+					position: position,
+					direction: [0, -1],
+					thickness: 4,
+					length: 20
+				};
+				
+				//We use a stack for saving and loading (just like the matrix stack).
+				var stack = [];
+				var i, j, angle;
+				
+				//We start from the position
+				context.moveTo(turtle.position[0], turtle.position[1]);		
+				
+				for (var i = 0; i < state.length; i++) {
+					if (state[i] == 'F') {
+						/**
+						 * Here you should modify the turtle's position using its stored current length and direction vector.
+						 * Also multiply the length of the line by 0.98; and the thickness by 0.92 (you can choose other numbers if you want).
+						 * Set the corresponding line width for the canvas and do the lineTo().
+						 */
+						 turtle.position[0] += turtle.length * turtle.direction[0];
+						 turtle.position[1] += turtle.length * turtle.direction[1];
+						 
+						 turtle.length *= 0.98;
+						 turtle.thickness *= 0.92;
+						 
+						 context.lineWidth  = turtle.thickness;
+						 context.lineTo(turtle.position[0], turtle.position[1]);
+						
+						//Because we are changing the lineWidth, we need to draw the current path and begin a new one.
+						context.closePath();
+						context.stroke();
+						context.beginPath();
+						context.moveTo(turtle.position[0], turtle.position[1]);
+					}
+					if (state[i] == '+') {
+						//We take the angle value from the parameter after the "+" sign.
+						for (j = i + 1; state[i+1] == '(' && state[j] != ')' && i < state.length; j++) {}
+						angle = parseFloat(state.substring(i + 2, j));
+						angle = toRad(angle);
+						
+						/**
+						 * Modify the turtle's direction based on the angle.
+						 */
+						
+						var x = turtle.direction[0] * Math.cos(angle) - turtle.direction[1] * Math.sin(angle);
+						var y = turtle.direction[0] * Math.sin(angle) + turtle.direction[1] * Math.cos(angle);
+						turtle.direction[0] = x;
+						turtle.direction[1] = y;
+					}
+					if (state[i] == '-') {
+						//We take the angle value from the parameter after the "-" sign.
+						for (j = i + 1; state[i+1] == '(' && state[j] != ')' && i < state.length; j++) {}
+						angle = -1 * parseFloat(state.substring(i + 2, j));
+						angle = toRad(angle);
+						
+						/**
+						 * Modify the turtle's direction based on the angle.
+						 */
+						
+						var x = turtle.direction[0] * Math.cos(angle) - turtle.direction[1] * Math.sin(angle);
+						var y = turtle.direction[0] * Math.sin(angle) + turtle.direction[1] * Math.cos(angle);
+						turtle.direction[0] = x;
+						turtle.direction[1] = y;
+					}
+					if (state[i] == '[') {
+						/**
+						 * Save the current state. For this, use JSON.stringify(turtle).
+						 * That will make a string out of the JSON format of the turtle. This is the easiest way to copy its values.
+						 * Use the stack to save the string.
+						 * Leonardo da Vinci has determined, that child (side) branches have a 0.707 width of the parent branch. Change the thickness accordingly.
+						 */
+						
+						stack.push(JSON.stringify(turtle));
+						turtle.thickness *= 0.707;
+					}
+					if (state[i] == ']') {
+						/**
+						 * Load the previous turtle from the stack. Use JSON.parse() to recreate the JSON from the string.
+						 * Move the context back to the previous position.
+						 */
+						
+						turtle = JSON.parse(stack.pop());
+						context.moveTo(turtle.position[0], turtle.position[1]);
+					}
+				}
+				context.closePath();
+				context.stroke();
+			}
+			
+		</script>
+	</head>
+	<body onload="onLoad()">
+		<canvas width="800" height="600" id="myCanvas"></canvas>
+	</body>
+</html>

@@ -1,0 +1,658 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Computer Graphics - Basic II - Task 5.1</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="three.r120.js"></script>
+		<script type="text/javascript">
+		
+			//The usual three
+			var renderer, scene, camera;
+			
+			//Here we will store all the data that we send to the shader
+			var vertices = [];
+			var faces = [];
+			var colors = [];
+			var normals = [];
+			var triangleCount = 0;
+			var vertexCount = 0;
+			var vertexShader, fragmentShader, uvFragmentShader;
+			var pathTraceMaterial, uvDisplayMaterial;
+			var dataTextures; //We use 2 data textures: 0 for vertices, 1 for face data (normal and color)
+			var renderTargets = [];
+			var n = 0;
+			
+			var clock = new THREE.Clock(); //We use this to get the time delta
+			
+			var frameTimeLog;
+		
+			function toRad(degree) {
+			
+				return Math.PI * 2 * degree / 360;
+			}
+		
+			function onLoad() { 
+				var canvasContainer = document.getElementById('myCanvasContainer');
+				frameTimeLog = document.getElementById('frameTimeLog');
+				
+				var height = 600;
+				//height = window.innerHeight - 24;
+				var width = height; 
+				
+				vertexShader = document.getElementById('vertexShader').textContent;
+				fragmentShader = document.getElementById('fragmentShader').textContent;
+				uvFragmentShader = document.getElementById('uvFragmentShader').textContent;
+				
+				renderer = new THREE.WebGLRenderer(); 
+				renderer.setSize(width, height);
+				canvasContainer.appendChild(renderer.domElement);
+				
+				renderTargets[0] = new THREE.WebGLRenderTarget( width, height, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter});
+				renderTargets[1] = new THREE.WebGLRenderTarget( width, height, { minFilter: THREE.NearestFilter, magFilter: THREE.NearestFilter});
+				
+				//These will create the data for the hangar and the chopper
+				//addHangar();
+				//addChopper();
+				addGeometry();
+				
+				//Specify some positions for our scene, here we need a viewer position, because we will be working in the world space
+				var lightPosition = new THREE.Vector3(0.0, 10.0, 5.0);
+				var viewerPosition = new THREE.Vector3(0.0, 0.0, 24.0);
+				
+				//This will generate our textures
+				dataTextures = generateDataTextures();
+
+				var uniforms = {
+					vertexData: {
+						type: 't',
+						value: dataTextures[0]
+					},
+					triangleData: {
+						type: 't',
+						value: dataTextures[1]
+					},
+					faces: {
+						type: 'iv',
+						value: faces //In here we have the face indices
+					},
+					time: {
+						value: 0
+					},
+					sampleWeight: {
+						value: 0
+					},
+					previousSample: {
+						type: 't',
+						value: renderTargets[0].texture
+					},
+					lightPosition: {
+						type: 'v3',
+						value: lightPosition
+					},
+					viewerPosition: {
+						type: 'v3',
+						value: viewerPosition
+					},
+					width: {
+						type: 'f',
+						value: width
+					},
+					height: {
+						type: 'f',
+						value: height
+					}
+				};
+
+				//In the shaders we will replace the triangleCount and vertexCount
+				//The shaders will be compiled with fixed values for them
+				fragmentShader = fragmentShader.replace(/\(\(triangleCount\)\)/g, triangleCount);
+				fragmentShader = fragmentShader.replace(/\(\(vertexCount\)\)/g, vertexCount);
+
+				pathTraceMaterial = new THREE.ShaderMaterial({
+					uniforms: uniforms,
+					vertexShader: vertexShader,
+					fragmentShader: fragmentShader
+				});
+				
+				uvDisplayMaterial = new THREE.ShaderMaterial({
+					uniforms: {
+						textureSample: {
+							type: 't',
+							value: renderTargets[1].texture
+						},
+						width: {
+							type: 'f',
+							value: width
+						},
+						height: {
+							type: 'f',
+							value: height
+						}
+					},
+					vertexShader: vertexShader,
+					fragmentShader: uvFragmentShader
+				});
+				
+				//From here on, we put together the Three.js scene for the path tracer.
+				scene = new THREE.Scene();
+
+				var size = 50;
+				
+				var geometry = new THREE.PlaneBufferGeometry(size, size);
+				var quad = new THREE.Mesh(geometry, pathTraceMaterial);
+				scene.add(quad);
+				
+				var halfSize = size / 2;
+				camera = new THREE.OrthographicCamera(-halfSize, halfSize, halfSize, -halfSize, 1, 10);
+				camera.position.set(0, 0, 2);
+				
+				//From here on, we put together the shaders and Three.js scene for rendering to the screen.
+				
+				draw(); //Comment that in, when there is something to render and something to render with. :)
+			}
+			
+			var frameCounter = 0;
+			var startTime = 0;
+			var currentTime = 0;
+			var timeDifference = 0;
+			
+			function draw() {
+				requestAnimationFrame(draw);
+				
+				currentTime = clock.getElapsedTime();
+				
+				frameCounter++;
+				timeDifference = currentTime - startTime;
+				if (timeDifference > 1.0) {
+					frameTimeLog.innerHTML = `FPS: ${Math.round(frameCounter / timeDifference)}`;
+					frameCounter = 0;
+					startTime = currentTime;
+				}
+				
+				//Render path tracing result to texture 1.
+				scene.children[0].material.uniforms.time.value = currentTime;
+				scene.children[0].material.uniforms.sampleWeight.value = 1 / (n + 1);
+				scene.children[0].material.uniforms.previousSample.value = renderTargets[0].texture;	//path tracing result from the previous draw loop
+				renderer.setRenderTarget(renderTargets[1]);
+				renderer.render(scene, camera);
+				
+				//Send texture 1 to uvFragmentShader, switch quad material to uvDisplayMaterial, render quad texture 1 to the screen.
+				uvDisplayMaterial.uniforms.textureSample.value = renderTargets[1].texture;
+				scene.children[0].material = uvDisplayMaterial;
+				renderer.setRenderTarget(null);
+				renderer.render(scene, camera);
+				
+				//Switch quad materials back, flip render targets (textures).
+				scene.children[0].material = pathTraceMaterial;
+				[renderTargets[0], renderTargets[1]] = [renderTargets[1], renderTargets[0]];
+				n++;
+			}
+			
+			/**
+			 * Hangar consists of one cuboid
+			 */
+			function addHangar() {
+				createCube(
+					new THREE.Vector3(0, 0, 0),    //Position
+					new THREE.Vector3(-50, 50, 50),//Scale
+					new THREE.Color(0xffffff)      //Color
+				);
+			}
+			
+			/**
+			 * Chopper consists or 3 cuboids
+			 */
+			function addChopper() {
+				createCube(
+					new THREE.Vector3(0, -15, 0), 
+					new THREE.Vector3(10, 4, 4), 
+					new THREE.Color(0x2222ff)
+				);
+				
+				createCube(
+					new THREE.Vector3(5.5, -12, 0), 
+					new THREE.Vector3(10, 0.6, 1), 
+					new THREE.Color(0x22ff22)
+				);
+				createCube(
+					new THREE.Vector3(-5.5, -12, 0), 
+					new THREE.Vector3(10, 0.6, 1), 
+					new THREE.Color(0x22ff22)
+				);
+			}
+			
+			function addGeometry() {
+				var wallColor = new THREE.Color(0xfefefe);
+				// Left
+				createCube(
+					new THREE.Vector3(-25, 0, 0), 
+					new THREE.Vector3(0.5, 50, 50), 
+					new THREE.Color(0xff0000)
+				);
+				// Right
+				createCube(
+					new THREE.Vector3(25, 0, 0), 
+					new THREE.Vector3(0.5, 50, 50), 
+					new THREE.Color(0x00ff00)
+				);
+				// Up
+				createCube(
+					new THREE.Vector3(0, 25, 0), 
+					new THREE.Vector3(50, 0.5, 50), 
+					wallColor
+				);
+				// Back
+				createCube(
+					new THREE.Vector3(0, 0, -25), 
+					new THREE.Vector3(50, 50, 0.5),  
+					wallColor
+				);
+				// Down
+				createCube(
+					new THREE.Vector3(0, -25, 0), 
+					new THREE.Vector3(50, 0.5, 50), 
+					wallColor
+				);
+				// Front
+				createCube(
+					new THREE.Vector3(0, 0, 25), 
+					new THREE.Vector3(50, 50, 0.5), 
+					wallColor
+				);
+				
+				// Shapes
+				createCube(
+					new THREE.Vector3(10.5, -3, -11),
+					new THREE.Vector3(1, 40, 20),
+					new THREE.Color(0xffffff),
+					0, -40, 9
+				);
+				
+				createCube(
+					new THREE.Vector3(-10.5, -3, -11),
+					new THREE.Vector3(1, 40, 20),
+					new THREE.Color(0xffffff),
+					0, 40, -9
+				);
+				
+				createSphere(
+					new THREE.Vector3(0, -5, -24),
+					new THREE.Vector3(0.75, 0.75, 0.75),
+					new THREE.Color(0xffffff)
+				);
+			}
+			
+			/**
+			 * This function creates a sphere and adds its data to the arrays.
+			 * You may also try this function out. Although a sphere will create many triangles to the scene.
+			 */
+			function createSphere(position, scale, color) {
+				if (scale == undefined) {
+					scale = new THREE.Vector(1, 1, 1);
+				}
+				if (color == undefined) {
+					color = new THREE.Color(0xff0000);
+				}
+				var geometry = new THREE.SphereGeometry(8, 8, 8);
+				geometry.applyMatrix4(new THREE.Matrix4().set(
+					scale.x, 	 0.0, 	  0.0, position.x,
+						0.0, scale.y, 	  0.0, position.y,
+						0.0, 	 0.0, scale.z, position.z,
+						0.0, 	 0.0, 	  0.0, 1.0
+				));
+				addObject(geometry, color);
+			}
+			
+			/**
+			 * This function creates a cube and adds its data to the arrays.
+			 * Used by hangar and chopper.
+			 */
+			function createCube(position, scale, color, xAngle, yAngle, zAngle) {
+				if (scale == undefined) {
+					scale = new THREE.Vector(1, 1, 1);
+				}
+				if (xAngle == undefined) {
+					xAngle = 0;
+				}
+				if (yAngle == undefined) {
+					yAngle = 0;
+				}
+				if (zAngle == undefined) {
+					zAngle = 0;
+				}
+				if (color == undefined) {
+					color = new THREE.Color(0xff0000);
+				}
+				var geometry = new THREE.BoxGeometry(1, 1, 1);
+				geometry.scale(scale.x, scale.y, scale.z);
+				geometry.rotateX(toRad(xAngle));
+				geometry.rotateY(toRad(yAngle));
+				geometry.rotateZ(toRad(zAngle));
+				geometry.translate(position.x, position.y, position.z);
+				
+				addObject(geometry, color);
+			}
+			
+			function addObject(geometry, color) {
+				var currentFaceIndex = vertices.length / 3;
+				//Each object has their own faces indices. But if we store them all in a data array, we need to change the numbering.
+			
+				//Go through the vertices of the geometry (geometry.vertices) and add the values to the "vertices" array
+				for (var vertex of geometry.vertices) {
+					vertices.push(vertex.x, vertex.y, vertex.z);
+				}
+
+				//Have Three.js calculate the normals for us
+				geometry.computeFaceNormals();
+				
+				//Go through the faces of the geometry (geometry.faces) and add:
+				// - Face indices, don't forget to change them
+				// - Normals from the faces
+				// - Colors, add the same color for all faces (unless you want to change it?)
+				for (var face of geometry.faces) {
+					faces.push(
+						face.a + currentFaceIndex,
+						face.b + currentFaceIndex,
+						face.c + currentFaceIndex
+					);
+					
+					normals.push(face.normal.x, face.normal.y, face.normal.z);
+					
+					colors.push(color.r, color.g, color.b);
+				}
+				
+				//After this, we have increased our data
+				triangleCount += geometry.faces.length;
+				vertexCount += geometry.vertices.length;
+			}
+
+			function generateDataTextures() {
+				var data = new Float32Array(vertexCount * 3); //This is a sequential memory array in JS
+				var index;
+				
+				//We copy the data from the vertices to the data array
+				for (i = 0; i < vertexCount * 3; i++) {
+					//Vertex position
+					data[i] = vertices[i];
+				}
+				
+				//Create a new data texture, one big row. NN filter, no mipmaps.
+				var vertexTexture = new THREE.DataTexture(data, vertexCount, 1, THREE.RGBFormat, THREE.FloatType);
+				vertexTexture.minFilter = THREE.NearestFilter;
+				vertexTexture.magFilter = THREE.NearestFilter;
+				vertexTexture.generateMipmaps = false;
+				vertexTexture.needsUpdate = true;
+
+				/*
+				 * --Task--
+				 * We want to do a similar thing for the normals and colors.
+				 * For this, we create a triangleCount X 2 data texture. First row will store the normals, second will store the colors.
+				 */
+				var rowLength = triangleCount * 3;
+				var triangleData = new Float32Array(rowLength * 2);
+
+				//Populate the triangleData with the correct data
+				for(var i = 0; i < rowLength; i++) {
+					triangleData[i] = colors[i];
+					triangleData[i + rowLength] = normals[i];
+				}
+				
+				//Create the DataTexture with that data, configure the filtering as before.
+				//In r73 you can specify triangleTexture.flipY = true, in order to start from the top
+				var triangleTexture = new THREE.DataTexture(triangleData, triangleCount, 2, THREE.RGBFormat, THREE.FloatType);
+				triangleTexture.minFilter = THREE.NearestFilter;
+				triangleTexture.magFilter = THREE.NearestFilter;
+				triangleTexture.generateMipmaps = false;
+				triangleTexture.needsUpdate = true;
+				
+				return [vertexTexture, triangleTexture];
+			}
+		
+		</script>
+		
+		<script id="vertexShader" type="x-shader/x-vertex">
+			varying vec3 vertexPosition;
+			void main() {
+				vertexPosition = position;
+				gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+			}
+		</script>
+		
+		<script id="fragmentShader" type="x-shader/x-fragment">
+			uniform sampler2D vertexData;
+			uniform sampler2D triangleData;
+			uniform ivec3 faces[((triangleCount))];
+
+			uniform vec3 lightPosition;
+			uniform vec3 viewerPosition;
+			
+			uniform float time;
+			uniform float sampleWeight;
+			uniform sampler2D previousSample;
+			
+			uniform float width;
+			uniform float height;
+
+			varying vec3 vertexPosition;
+
+			float infinity = 9000.0; //Infinity is 9000, because otherwise you are over 9000.
+			int triangleCount = ((triangleCount));
+			int vertexCount = ((vertexCount));
+
+			struct hit {
+				bool isHit;
+				int index;
+				vec3 hitPoint;
+			};
+
+			struct colorResult {
+				vec4 color;
+				vec3 normal;
+			};
+
+			float checkItersection(vec3 rayStart, vec3 rayDirection, vec3 triangle[3]) {
+				vec3 edge0 = triangle[1] - triangle[0];
+				vec3 edge1 = triangle[2] - triangle[0];
+				
+				vec3 pVec = cross(rayDirection, edge1);
+				//Calculate system determinant
+				float pHat = dot(edge0, pVec);
+				
+				float epsilon = 0.0001;
+				
+				if (pHat < epsilon) {
+					//The ray is approaching the from the back or is parallel to the triangle.
+					return infinity;
+				}
+
+				vec3 b = rayStart - triangle[0];
+				
+				float u = dot(b, pVec);
+				if (u < -epsilon || u > pHat) {
+					//The hit is outside of the triangle.
+					return infinity;
+				}
+				
+				vec3 qVec = cross(b, edge0);
+				
+				float v = dot(rayDirection, qVec);
+				if (v < -epsilon || u + v > pHat) {
+					//The hit is outside of the triangle.
+					return infinity;
+				}
+				
+				//Both of the checks passed, so the ray is intersecting a triangle and not a plane.
+				float t = dot(edge1, qVec);
+				if (t <= epsilon) {
+					//The triangle is behind the ray.
+					return infinity;
+				}
+				
+				t /= pHat;
+				
+				return t;
+			}
+
+			/**
+			 * Ray cast function. Takes a start position and a direction.
+			 * Casts a ray into the scene (ie checks for intersections with all the objects in the scene)
+			 * Then returns the closest hit point.
+			 */
+			hit rayCast(vec3 rayStart, vec3 rayDirection) {
+				float closestIntersection = infinity;
+				float intersection = infinity;
+				int closestIntersectionIndex = -1;
+				vec3 triangle[3];
+				vec3 vertexIndex;
+
+				for (int i = 0; i < ((triangleCount)); i++) {
+					vertexIndex = (vec3(faces[i]) + vec3(0.5)) / float(vertexCount);
+					triangle[0] = texture2D(vertexData, vec2(vertexIndex.x)).xyz;
+					triangle[1] = texture2D(vertexData, vec2(vertexIndex.y)).xyz;
+					triangle[2] = texture2D(vertexData, vec2(vertexIndex.z)).xyz;
+					intersection = checkItersection(rayStart, rayDirection, triangle);
+					if (intersection < closestIntersection) {
+						closestIntersection = intersection;
+						closestIntersectionIndex = i;
+					}
+				}
+				if (closestIntersectionIndex > -1) {
+					hit rayHit = hit(true, closestIntersectionIndex, rayStart + closestIntersection * rayDirection);
+
+					return rayHit;
+				} else {
+					hit rayMiss = hit(false, closestIntersectionIndex, vec3(0.0, 0.0, 0.0));
+
+					return rayMiss;
+				}
+			}
+
+			/**
+			 * Given a ray start, ray direction and that ray's first hit point, calculate the color value for that hit point.
+			 */
+			colorResult calculateColor(vec3 rayStart, vec3 rayDirection, hit rayHit) {
+				vec4 color;
+				vec3 hitPoint, normal, lightDirection;
+
+				if (rayHit.isHit) {
+					color = texture2D(triangleData, vec2((float(rayHit.index) + 0.5) / float(triangleCount), 0.25));
+
+					normal = texture2D(triangleData, vec2((float(rayHit.index) + 0.5) / float(triangleCount), 0.75)).rgb;
+					
+					//Just some diffuse and ambient light calculations here...
+					lightDirection = lightPosition - rayHit.hitPoint;
+					lightDirection = normalize(lightDirection);
+					color *= clamp(dot(lightDirection, normal), 0.0, 1.0);
+					//color += vec4(0.2, 0.2, 0.2, 1.0);
+				} else {
+					color = vec4(0.0, 0.0, 0.0, 1.0);
+				}
+				colorResult result = colorResult(color, normal);
+
+				return result;
+			}
+			
+			highp float rand(vec2 co) {
+				highp float a = 12.9898;
+				highp float b = 78.233;
+				highp float c = 43758.5453;
+				highp float dt = dot(co.xy, vec2(a, b));
+				highp float sn = mod(dt, 3.14);
+				return fract(sin(sn) * c);
+			}
+			
+			vec3 randomRay(vec3 seed, vec3 n) {
+				float u = rand(seed.xy) * 2.0 - 1.0;
+				float phi = rand(seed.yx) * 3.14 * 2.0;
+				
+				float a = sqrt(1.0 - u * u);
+				
+				vec3 v = vec3(
+					a * cos(phi),
+					a * sin(phi),
+					u
+				);
+				
+				if (dot(n, v) < 0.0) {
+					v = -v;
+				}
+			
+				return v;
+			}
+
+			/**
+			 * Path tracing.
+			 * If you want to bounce the ray, then this is the place to do it.
+			 */
+			vec4 pathTrace(vec3 rayStart, vec3 rayDirection) {
+				hit rayHit = rayCast(rayStart, rayDirection);
+				colorResult result = calculateColor(rayStart, rayDirection, rayHit);
+				vec4 color = result.color;
+				
+				if (rayHit.isHit) {
+					vec3 randomRayDirection = randomRay(rayHit.hitPoint + vec3(time, time * 3.0, time * 6.0), result.normal);
+					hit rayHit2 = rayCast(rayHit.hitPoint, randomRayDirection);
+					colorResult result2 = calculateColor(rayHit2.hitPoint, randomRayDirection, rayHit2);
+					color = mix(color, result2.color, 0.5);
+					
+					if (rayHit2.isHit) {
+						randomRayDirection = randomRay(rayHit2.hitPoint + vec3(time, time * 3.0, time * 6.0), result2.normal);
+						hit rayHit3 = rayCast(rayHit2.hitPoint, randomRayDirection);
+						colorResult result3 = calculateColor(rayHit3.hitPoint, randomRayDirection, rayHit3);
+						color = mix(color, result3.color, 0.175);
+						
+						if (rayHit3.isHit) {
+							randomRayDirection = randomRay(rayHit3.hitPoint + vec3(time, time * 3.0, time * 6.0), result3.normal);
+							hit rayHit4 = rayCast(rayHit3.hitPoint, randomRayDirection);
+							colorResult result4 = calculateColor(rayHit4.hitPoint, randomRayDirection, rayHit4);
+							color = mix(color, result4.color, 0.05);
+						}
+					}
+				}
+
+				return color;
+			}
+
+
+			void main() {
+				//Find the rayStart and rayDirection.
+				vec3 rayStart = viewerPosition;
+				vec3 rayDirection = normalize(vec3(vertexPosition.xy, 0.0) - viewerPosition);
+
+				vec4 newColor = pathTrace(rayStart, rayDirection);
+				
+				vec2 uv = gl_FragCoord.xy / vec2(width, height);
+				vec4 oldColor = texture2D(previousSample, uv);
+				
+				gl_FragColor = mix(oldColor, newColor, sampleWeight);
+			}
+		</script>
+		
+		<script id="uvFragmentShader" type="x-shader/x-fragment">
+			uniform sampler2D textureSample;
+			
+			uniform float width;
+			uniform float height;
+			
+			varying vec3 vertexPosition;
+			
+			void main() {
+				vec2 uv = gl_FragCoord.xy / vec2(width, height);
+				gl_FragColor = texture2D(textureSample, uv);
+			}
+		</script>
+	</head>
+	
+	<style type="text/css">
+		* {
+			margin: 0;
+			border: 0;
+			padding: 0;
+		}
+	</style>
+	
+	<body onload="onLoad()" style="margin: 5px 5px 0px 5px;">
+		<div id="myCanvasContainer"></div>
+		<div id="frameTimeLog">Frame time:  ms</div>
+	</body>
+</html>

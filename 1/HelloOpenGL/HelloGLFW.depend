@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1423732657 source:c:\users\margus\documents\arvutigraafika\cglearn\app\storage\solutions\1\helloglfw\main.cpp
+	<stdlib.h>
+	<unistd.h>
+	<GLFW/glfw3.h>
+
+1388517273 c:\users\margus\documents\arvutigraafika\cglearn\app\storage\solutions\1\helloglfw\include\glfw\glfw3.h
+	<stddef.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<GLES3/gl3.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1599325988 source:c:\users\matti\desktop\helloopengl\src\main.cpp
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	<math.h>
+	<GLFW/glfw3.h>
+
+1579482797 c:\users\matti\desktop\helloopengl\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<vulkan/vulkan.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl32.h>
+	<GLES2/gl2ext.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<GL/glcorearb.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
