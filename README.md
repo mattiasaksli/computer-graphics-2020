@@ -2,7 +2,7 @@
 
 Created with C++ (OpenGL) or JavaScript (three.js).
 
-You can either build the C++ projects yourself, or run the .exe file in the ```/bin``` folder (Windows only). For the JavaScript projects, just open the index.html file in a web-browser.
+For the C++ projects, you can build the project using CodeBlocks and run it. For the JavaScript projects, just open the index.html file in a web-browser.
 
 The following links lead to the more interesting projects in this repository.
 
